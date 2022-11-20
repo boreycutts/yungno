@@ -74,6 +74,18 @@ document.addEventListener("loaded", () => {
             links[i].classList.remove("nav__link--selected");
         }
     }
+
+    let hamburger = document.getElementById("hamburger");
+    let headerMobile = document.getElementById("nav-mobile");
+    hamburger.addEventListener("click", (event) => {
+        if(event.target.checked) {
+            headerMobile.classList.remove("nav-mobile--hidden");
+            headerMobile.classList.add("nav-mobile");
+        } else {
+            headerMobile.classList.remove("nav-mobile");
+            headerMobile.classList.add("nav-mobile--hidden");
+        }
+    });
 });
 
 document.addEventListener("setpage", event => {
@@ -87,5 +99,10 @@ document.addEventListener("setpage", event => {
                 links[i].classList.remove("nav__link--selected");
             }
         }
+        let hamburger = document.getElementById("hamburger");
+        let headerMobile = document.getElementById("nav-mobile");
+        headerMobile.classList.remove("nav-mobile");
+        headerMobile.classList.add("nav-mobile--hidden");
+        hamburger.checked = false;
     }
 });

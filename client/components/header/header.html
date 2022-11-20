@@ -1,4 +1,4 @@
-<div id="header" class="main__header--top flex-set flex--row flex--align-items-center">
+<div id="header" class="main__header--top flex-set flex--row flex--align-items-center desktop-only">
     <div class="header__logo">
         <img class="logo__img" src="images/nfe.webp" alt="NFE">
     </div>
@@ -12,3 +12,56 @@
         <a data-page="contact" class="nav__link" href="#contact">Contact Me</a>
     </div>
 </div>
+
+<div class="mobile-only">
+    <div id="header-mobile" class="main__header-mobile">
+        <div style="width: calc(100vw - 20px);" class="flex-set flex--row flex--content-center">
+            <div class="header__logo">
+                <img class="logo__img" src="images/nfe.webp" alt="NFE">
+            </div>
+        </div>
+    
+        <div style="position:fixed; top: 0; left: 0;">
+            <div id="nav-mobile" class="nav-mobile--hidden">
+                <div class="flex-set flex--column">
+                    <a data-page="home" class="nav__link text--medium" href="#home">Home</a>
+                    <a data-page="bio" class="nav__link text--medium" href="#bio">Bio</a>
+                    <a data-page="photos" class="nav__link text--medium" href="#photos">Photos</a>
+                    <a data-page="contact" class="nav__link text--medium" href="#contact">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="hamburger__container">
+        <input id="hamburger" type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!-- <div id="header-mobile" class="main__header-mobile mobile-only">
+    <div style="width: calc(100vw - 20px);" class="flex-set flex--row flex--content-center">
+        <div class="header__logo">
+            <img class="logo__img" src="images/nfe.webp" alt="NFE">
+        </div>
+    </div>
+
+    <div style="position:fixed; top: 0; left: 0;">
+        <div id="nav-mobile" class="nav-mobile--hidden mobile-only">
+            <div class="flex-set flex--column">
+                <a data-page="home" class="nav__link text--medium" href="#home">Home</a>
+                <a data-page="bio" class="nav__link text--medium" href="#bio">Bio</a>
+                <a data-page="photos" class="nav__link text--medium" href="#photos">Photos</a>
+                <a data-page="contact" class="nav__link text--medium" href="#contact">Contact Me</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="hamburger__container mobile-only">
+    <input id="hamburger" type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+</div> -->

@@ -5,6 +5,14 @@
     padding: 20px;
     transition: all 1s ease 0s;
     z-index: 666;
+
+    &-mobile {
+        @extend .main__header;
+        padding: 10px;
+        width: calc(100vw - 20px);
+        background-color: $color-secondary-dark;
+        color: $color-primary-dark;
+    }
     
     &--top {
         @extend .main__header;
@@ -35,6 +43,21 @@
 }
 
 .nav {
+    &-mobile {
+        background-color: $color-secondary-dark;
+        width: 100vw;
+        padding: 7px 65px;
+        top: 0;
+        position: relative;
+        z-index: 667;
+        transition: all 1s ease;
+
+        &--hidden {
+            @extend .nav-mobile;
+            top: -400px;
+        }
+    }
+
     &__link {
         padding: 5px 10px;
         font-weight: 300;
