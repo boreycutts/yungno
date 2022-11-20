@@ -20,12 +20,12 @@
             @extend.main__header-mobile;
             background-color: $color-secondary-dark;
             color: $color-primary-dark;
+            box-shadow: 0px 3px 10px #333;
         }
     }
     
     &--top {
         @extend .main__header;
-        // background-color: $color-primary-dark;
         color: $color-secondary-dark;
     }
 
@@ -64,6 +64,7 @@
         position: relative;
         z-index: 667;
         transition: all 500ms ease;
+        box-shadow: 0px 2px 10px #333;
 
         &--hidden {
             @extend .nav-mobile;

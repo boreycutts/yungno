@@ -654,6 +654,7 @@ html, body {
 .main__header-mobile--scrolling {
   background-color: white;
   color: black;
+  box-shadow: 0px 3px 10px #333;
 }
 
 .main__header--top {
@@ -690,6 +691,7 @@ html, body {
   position: relative;
   z-index: 667;
   transition: all 500ms ease;
+  box-shadow: 0px 2px 10px #333;
 }
 
 .nav-mobile--hidden {
