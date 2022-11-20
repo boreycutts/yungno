@@ -1,0 +1,17 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    transition: color 1s ease;
+    transition: background-color 1s ease;
+}
+
+.theme {
+    &--dark {
+        color: $color-secondary-dark;
+        background-color: $color-primary-dark;
+    }
+
+    &--light {
+        color: $color-primary-dark;
+        background-color: $color-secondary-dark;
+    }
+}

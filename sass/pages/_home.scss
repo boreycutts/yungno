@@ -1,0 +1,14 @@
+.home {
+    max-width: 1060px;
+    width: calc(100vw - 100px);
+
+    &__container-half {
+        width: calc(50% - 40px);
+        padding: 20px;
+    }
+
+    &__section {
+        padding: 40px;
+        text-align: center;
+    }
+}

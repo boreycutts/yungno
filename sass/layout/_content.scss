@@ -1,0 +1,14 @@
+.main__content {
+    padding-top: 175px;
+    transition: all 1000ms ease;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    opacity: 1;
+    
+    &--hidden {
+        @extend .main__content;
+        top: 20px;
+        opacity: 0;
+    }
+}

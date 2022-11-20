@@ -1,0 +1,9 @@
+.photos {
+    max-width: 1060px;
+    width: calc(100vw - 100px);
+
+    &__container-third {
+        width: calc(33% - 30px);
+        padding: 10px;
+    }
+}

@@ -1,0 +1,16 @@
+.input {
+    background: #fff;
+    color: #444 !important;
+    font-size: 18px;
+    font-weight: 100 !important;
+    font-family: "Roboto";
+    width: 360px;
+    padding: 11px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #bbb;
+
+    &--message {
+        @extend .input;
+        height: 135px;
+    }
+}
