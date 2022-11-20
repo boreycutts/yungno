@@ -333,6 +333,12 @@ html, body {
   overflow: hidden;
 }
 
+@media (max-width: 750px) {
+  .back-video {
+    height: 110vh;
+  }
+}
+
 .video-container {
   top: -10px;
   position: absolute;
@@ -341,10 +347,22 @@ html, body {
   height: 120vh;
 }
 
+@media (max-width: 750px) {
+  .video-container {
+    height: 110vh;
+  }
+}
+
 .container {
   height: 120vh;
   scroll-padding-top: 0;
   scroll-margin-top: 0;
+}
+
+@media (max-width: 750px) {
+  .container {
+    height: 110vh;
+  }
 }
 
 .main__content, .main__content--hidden {
