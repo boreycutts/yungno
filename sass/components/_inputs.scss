@@ -10,15 +10,15 @@
     border: 1px solid #bbb;
 
     @media (max-width: $mobile-cutoff) {
-        width: auto;
+        width: 80vw;
     }
 
     &--message {
         @extend .input;
         height: 135px;
-        
+
         @media (max-width: $mobile-cutoff) {
-            width: auto;
+            width: 80vw;
         }
     }
 }

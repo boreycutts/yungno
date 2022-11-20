@@ -7,10 +7,12 @@
 
     height: 120vh;
     z-index: 0;
+    overflow:hidden;
 }
 
 .video-container {
     top: -10px;
     // left: 0;
     position: absolute;
+    overflow:hidden;
 }

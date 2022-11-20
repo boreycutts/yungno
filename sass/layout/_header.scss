@@ -10,8 +10,17 @@
         @extend .main__header;
         padding: 10px;
         width: calc(100vw - 20px);
-        background-color: $color-secondary-dark;
-        color: $color-primary-dark;
+
+        &--top {
+            @extend.main__header-mobile;
+            color: $color-primary-dark;
+        }
+
+        &--scrolling {
+            @extend.main__header-mobile;
+            background-color: $color-secondary-dark;
+            color: $color-primary-dark;
+        }
     }
     
     &--top {
@@ -39,6 +48,10 @@
         width: 60px;
         height: 60px;
         padding-right: 20px;
+
+        @media (max-width: $mobile-cutoff) {
+            padding: 0;
+        }
     }
 }
 

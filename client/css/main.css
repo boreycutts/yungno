@@ -261,7 +261,7 @@ html, body {
 
 @media (max-width: 750px) {
   .input, .input--message {
-    width: auto;
+    width: 80vw;
   }
 }
 
@@ -271,7 +271,7 @@ html, body {
 
 @media (max-width: 750px) {
   .input--message {
-    width: auto;
+    width: 80vw;
   }
 }
 
@@ -330,11 +330,13 @@ html, body {
 .back-video {
   height: 120vh;
   z-index: 0;
+  overflow: hidden;
 }
 
 .video-container {
   top: -10px;
   position: absolute;
+  overflow: hidden;
 }
 
 .main__content, .main__content--hidden {
@@ -605,7 +607,7 @@ html, body {
   order: 3;
 }
 
-.main__header, .main__header-mobile, .main__header--top, .main__header--scrolling {
+.main__header, .main__header-mobile, .main__header-mobile--top, .main__header-mobile--scrolling, .main__header--top, .main__header--scrolling {
   position: fixed;
   width: calc(100vw - 40px);
   height: 60px;
@@ -614,9 +616,16 @@ html, body {
   z-index: 666;
 }
 
-.main__header-mobile {
+.main__header-mobile, .main__header-mobile--top, .main__header-mobile--scrolling {
   padding: 10px;
   width: calc(100vw - 20px);
+}
+
+.main__header-mobile--top {
+  color: black;
+}
+
+.main__header-mobile--scrolling {
   background-color: white;
   color: black;
 }
@@ -639,6 +648,12 @@ html, body {
   width: 60px;
   height: 60px;
   padding-right: 20px;
+}
+
+@media (max-width: 750px) {
+  .logo__img {
+    padding: 0;
+  }
 }
 
 .nav-mobile, .nav-mobile--hidden {
@@ -697,12 +712,24 @@ html, body {
   min-width: 200px;
 }
 
+@media (max-width: 750px) {
+  .bio {
+    width: 80%;
+  }
+}
+
 .contact {
   max-width: 1060px;
   width: calc(100vw - 100px);
   min-width: 200px;
   height: calc(100vh - 60px);
   padding-top: 40px;
+}
+
+@media (max-width: 750px) {
+  .contact {
+    width: auto;
+  }
 }
 
 .contact__info {
@@ -716,8 +743,9 @@ html, body {
 
 @media (max-width: 750px) {
   .contact__section {
-    width: 70%;
-    padding: 20px 40px;
+    width: 80vw;
+    padding: 0;
+    padding-top: 20px;
     align-items: center;
   }
 }
@@ -728,15 +756,9 @@ html, body {
 }
 
 @media (max-width: 750px) {
-  .contact__container-half {
-    width: 70%;
-  }
-}
-
-@media (max-width: 750px) {
   .contact__container {
-    width: 70%;
     padding-bottom: 20px;
+    align-items: center;
   }
 }
 
@@ -753,7 +775,7 @@ html, body {
 
 @media (max-width: 750px) {
   .home__container-half {
-    width: 70%;
+    width: 80%;
   }
 }
 
@@ -775,7 +797,7 @@ html, body {
 
 @media (max-width: 750px) {
   .photos__container-third {
-    width: 70%;
+    width: 80%;
   }
 }
 
@@ -783,7 +805,7 @@ body {
   font-family: 'Roboto', sans-serif;
   transition: color 500ms ease;
   transition: background-color 500ms ease;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 html {

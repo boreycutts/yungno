@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     transition: color 500ms ease;
     transition: background-color 500ms ease;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 html {
@@ -11,6 +11,7 @@ html {
     overflow-x: hidden !important;
     max-width: 100% !important;
 }
+
 
 .theme {
     &--dark {
