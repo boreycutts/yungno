@@ -259,8 +259,20 @@ html, body {
   border: 1px solid #bbb;
 }
 
+@media (max-width: 750px) {
+  .input, .input--message {
+    width: auto;
+  }
+}
+
 .input--message {
   height: 135px;
+}
+
+@media (max-width: 750px) {
+  .input--message {
+    width: auto;
+  }
 }
 
 .image--yungno {
@@ -682,13 +694,13 @@ html, body {
 .bio {
   max-width: 1060px;
   width: calc(100vw - 100px);
-  min-width: 750px;
+  min-width: 200px;
 }
 
 .contact {
   max-width: 1060px;
   width: calc(100vw - 100px);
-  min-width: 750px;
+  min-width: 200px;
   height: calc(100vh - 60px);
   padding-top: 40px;
 }
@@ -731,7 +743,7 @@ html, body {
 .home {
   max-width: 1060px;
   width: calc(100vw - 100px);
-  min-width: 750px;
+  min-width: 200px;
 }
 
 .home__container-half {
@@ -753,7 +765,7 @@ html, body {
 .photos {
   max-width: 1060px;
   width: calc(100vw - 100px);
-  min-width: 750px;
+  min-width: 200px;
 }
 
 .photos__container-third {
@@ -777,7 +789,8 @@ body {
 html {
   scroll-padding-top: 100px;
   scroll-margin-top: 100px;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  max-width: 100% !important;
 }
 
 .theme--dark {

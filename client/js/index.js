@@ -88,11 +88,9 @@ document.addEventListener("loaded", () => {
         }
 
         if (window.scrollY > 2250 && window.innerWidth > 750 || window.scrollY > 5250 && window.innerWidth < 750) {
-            document.body.classList.remove("theme--dark")
-            document.body.classList.add("theme--light")
+            
         } else {
-            document.body.classList.add("theme--dark")
-            document.body.classList.remove("theme--light")
+            
         }
 
         let home = document.getElementById("home");
@@ -112,24 +110,36 @@ document.addEventListener("loaded", () => {
             }
             links[1].classList.add("nav__link--selected");
             links[5].classList.add("nav__link--selected");
+
+            document.body.classList.add("theme--dark")
+            document.body.classList.remove("theme--light")
         } else if(workRect.top < 100 && contactRect.top > 100) {
             for(let i = 0; i < links.length; i++) {
                 links[i].classList.remove("nav__link--selected");
             }
             links[2].classList.add("nav__link--selected");
             links[6].classList.add("nav__link--selected");
+
+            document.body.classList.add("theme--dark")
+            document.body.classList.remove("theme--light")
         } else if(contactRect.top < 100) {
             for(let i = 0; i < links.length; i++) {
                 links[i].classList.remove("nav__link--selected");
             }
             links[3].classList.add("nav__link--selected");
             links[7].classList.add("nav__link--selected");
+
+            document.body.classList.remove("theme--dark")
+            document.body.classList.add("theme--light")
         } else {
             for(let i = 0; i < links.length; i++) {
                 links[i].classList.remove("nav__link--selected");
             }
             links[0].classList.add("nav__link--selected");
             links[4].classList.add("nav__link--selected");
+
+            document.body.classList.add("theme--dark")
+            document.body.classList.remove("theme--light")
         }
 
         console.log("\n")

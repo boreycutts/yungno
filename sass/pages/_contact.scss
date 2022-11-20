@@ -1,7 +1,7 @@
 .contact {
     max-width: 1060px;
     width: calc(100vw - 100px);
-    min-width: $mobile-cutoff;
+    min-width: 200px;
     height: calc(100vh - 60px);
     padding-top: 40px;
     
@@ -14,7 +14,7 @@
         text-align: center;
 
         @media (max-width: $mobile-cutoff) {
-            width: 70%;
+            width: 80%;
             padding: 20px 40px;
             align-items: center;
         }
