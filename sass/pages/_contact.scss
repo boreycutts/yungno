@@ -1,7 +1,9 @@
 .contact {
     max-width: 1060px;
     width: calc(100vw - 100px);
-    min-width: 700px;
+    min-width: $mobile-cutoff;
+    height: calc(100vh - 60px);
+    padding-top: 40px;
     
     &__info {
         padding: 10px 0;
@@ -11,7 +13,7 @@
         padding: 40px;
         text-align: center;
 
-        @media (max-width: 700px) {
+        @media (max-width: $mobile-cutoff) {
             width: 70%;
             padding: 20px 40px;
             align-items: center;
@@ -22,13 +24,13 @@
         padding: 20px;
         padding-bottom: 0;
 
-        @media (max-width: 700px) {
+        @media (max-width: $mobile-cutoff) {
             width: 70%;
         }
     }
 
     &__container {
-        @media (max-width: 700px) {
+        @media (max-width: $mobile-cutoff) {
             width: 70%;
             padding-bottom: 20px;
         }

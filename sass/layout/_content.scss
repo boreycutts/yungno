@@ -1,12 +1,12 @@
 .main__content {
-    padding-top: 150px;
-    transition: all 1000ms ease;
+    padding-top: 20px;
+    transition: all 500ms ease;
     position: absolute;
     width: 100vw;
     top: 0;
     opacity: 1;
 
-    @media (max-width: 700px) {
+    @media (max-width: $mobile-cutoff) {
         padding-top: 100px;
     }
     

@@ -1,13 +1,13 @@
 .photos {
     max-width: 1060px;
     width: calc(100vw - 100px);
-    min-width: 700px;
+    min-width: $mobile-cutoff;
 
     &__container-third {
         width: calc(33% - 30px);
         padding: 10px;
 
-        @media (max-width: 700px) {
+        @media (max-width: $mobile-cutoff) {
             width: 70%;
         }
     }

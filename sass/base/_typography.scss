@@ -6,6 +6,10 @@
         overflow-wrap: break-word;
     }
 
+    &--center {
+        text-align: center;
+    }
+
     &--lighter {
         @extend .text;
         font-weight: 100;

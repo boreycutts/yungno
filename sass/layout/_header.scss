@@ -3,7 +3,7 @@
     width: calc(100vw - 40px);
     height: 60px;
     padding: 20px;
-    transition: all 1s ease 0s;
+    transition: all 500ms ease 0s;
     z-index: 666;
 
     &-mobile {
@@ -16,7 +16,7 @@
     
     &--top {
         @extend .main__header;
-        background-color: $color-primary-dark;
+        // background-color: $color-primary-dark;
         color: $color-secondary-dark;
     }
 
@@ -50,7 +50,7 @@
         top: 0;
         position: relative;
         z-index: 667;
-        transition: all 1s ease;
+        transition: all 500ms ease;
 
         &--hidden {
             @extend .nav-mobile;

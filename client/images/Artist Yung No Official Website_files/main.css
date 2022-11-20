@@ -1,0 +1,799 @@
+@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+  -webkit-appearance: none;
+}
+
+input:focus, select:focus {
+  outline: none !important;
+}
+
+html, body {
+  text-size-adjust: auto;
+}
+
+.text, .text--lighter, .text--light, .text--small, .text--medium, .text--large {
+  line-height: 1.8;
+}
+
+.text--link {
+  color: inherit;
+  overflow-wrap: break-word;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--lighter {
+  font-weight: 100;
+}
+
+.text--light {
+  font-weight: 300;
+}
+
+.text--small {
+  font-size: 1em;
+}
+
+.text--medium {
+  font-size: 1.5em;
+}
+
+.text--large {
+  font-size: 2em;
+}
+
+.button, .button--light {
+  transition: all 500ms ease;
+  font-size: 1.5em;
+  font-weight: 100;
+  padding: 20px 25px;
+  border-radius: 0px;
+  border: 1px solid white;
+  width: fit-content;
+  background-color: inherit;
+  color: inherit;
+  position: relative;
+}
+
+.button:hover, .button--light:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.button--light {
+  border: 1px solid black;
+}
+
+.button--light:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.button__link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.hamburger__container {
+  display: block !important;
+  position: fixed;
+  top: 26px;
+  left: 26px;
+  z-index: 668;
+  user-select: none;
+}
+
+.hamburger__container input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+.hamburger__container span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #333;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+.hamburger__container span:first-child {
+  transform-origin: 0% 0%;
+}
+
+.hamburger__container span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+.hamburger__container input:checked ~ span:nth-last-child(3) {
+  opacity: 1;
+  transform: rotate(45deg) translate(0px, -2px);
+  background: #333;
+}
+
+.hamburger__container input:checked ~ span:nth-last-child(2) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.hamburger__container input:checked ~ span {
+  opacity: 1;
+  transform: rotate(-45deg) translate(1px, -2px);
+  background: #333;
+}
+
+.input, .input--message {
+  background: #fff;
+  color: #444 !important;
+  font-size: 18px;
+  font-weight: 100 !important;
+  font-family: "Roboto";
+  width: 360px;
+  padding: 11px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #bbb;
+}
+
+.input--message {
+  height: 135px;
+}
+
+.image--yungno {
+  width: 100%;
+  transition: box-shadow 1s ease;
+  box-shadow: 0 0 0 #999;
+}
+
+.image--yungno:hover {
+  box-shadow: 0 0 20px #999;
+}
+
+.image--album {
+  width: 400px;
+  height: 400px;
+  background: url("../images/letter_to_you_front.webp") no-repeat;
+  background-size: 400px 400px;
+  transition: background 500ms ease;
+}
+
+@media (max-width: 750px) {
+  .image--album {
+    width: 300px;
+    height: 300px;
+    background-size: 300px 300px;
+  }
+}
+
+.image--album:hover {
+  background: url("../images/letter_to_you_back.webp") no-repeat;
+  background-size: 400px 400px;
+}
+
+@media (max-width: 750px) {
+  .image--album:hover {
+    width: 300px;
+    height: 300px;
+    background-size: 300px 300px;
+  }
+}
+
+.image--album--overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.image--album--overlay:hover {
+  opacity: 1;
+}
+
+.image--icon {
+  width: 25px;
+  text-align: center;
+  padding-right: 5px;
+}
+
+.image--music {
+  height: 50px;
+  padding: 10px 10px 10px 0;
+}
+
+.back-video {
+  height: 120vh;
+  z-index: 0;
+}
+
+.video-container {
+  top: -10px;
+  position: absolute;
+}
+
+.main__content, .main__content--hidden {
+  padding-top: 20px;
+  transition: all 500ms ease;
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  opacity: 1;
+}
+
+@media (max-width: 750px) {
+  .main__content, .main__content--hidden {
+    padding-top: 100px;
+  }
+}
+
+.main__content--hidden {
+  top: 20px;
+  opacity: 0;
+}
+
+/*  FLEX.css  */
+/*  DECLARATION  ---------------------------------------------------------------
+/*  FLEX CONTAINER ( SET )
+    Summary:    make the elements inside a <tag> flow with flexbox by setting the
+                tag's display property to 'flex'.
+    Reference:  https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_flexbox_to_lay_out_web_applications
+*/
+.flex-set {
+  /* MID: IE 10 */
+  /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+  /* NEW, Chrome 21–28, Safari 6.1+ */
+  display: flex;
+}
+
+/*  FLEX ITEM
+      Summary:    a shorthand property specifying the ability of a flex item to alter
+                  its dimensions to fill available space. Summarizes {flex-grow, flex-shrink, flex-basis }
+      Reference:  https://developer.mozilla.org/en-US/docs/Web/CSS/flex
+      Default:    0 1 0;
+  */
+.flexed-item {
+  flex: 1 1 0;
+  /* VERY OLD Safari, iOS  */
+  box-flex: 1;
+}
+
+.flexed-item--auto {
+  flex: 1 1 auto;
+  /* VERY OLD Safari, iOS  */
+  box-flex: 1;
+}
+
+/*  DIRECTION ( ORIENTATION )  -------------------------------------------------
+      Summary:    specifies how flex items are placed in the flex container defining
+                  the main axis and the direction (normal or reversed).
+      Options:
+          Column: set main axis to vertical
+          Row :   set main axis to horizontal
+      Reference:  https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction
+      Default:    flex-direction: row;
+  */
+.flex--column {
+  flex-direction: column;
+}
+
+.flex--row {
+  flex-direction: row;
+}
+
+.flex--column-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex--row-reverse {
+  flex-direction: row-reverse;
+}
+
+/*  JUSTIFICATION (Main axis)   ------------------------------------------------
+      Summary:    defines how the browser distributes space between and around flex
+      items along the main-axis of their container.
+      Reference:  https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
+      Default:    justify-content: flex-start;
+  */
+/* Pack items around the center */
+.flex--content-center {
+  justify-content: center;
+}
+
+/* Pack flex items from the start  */
+.flex--content-start {
+  justify-content: flex-start;
+}
+
+/* Pack items from the end */
+.flex--content-end {
+  justify-content: flex-end;
+}
+
+/* Distribute items evenly,
+      The first item at the start, the last at the end */
+.flex--content-between {
+  justify-content: space-between;
+}
+
+/* Distribute items evenly
+      Items have equal space around them */
+.flex--content-around {
+  justify-content: space-around;
+}
+
+/*
+      ALIGN CONTENT ( Cross axis )  ----------------------------------------------
+      Summary:   aligns a flex container's lines within the flex container when
+                 there is extra space on the cross-axis.
+      Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/align-content
+      Default:   align-content: flex-start;
+  */
+/* Pack lines from the cross-axis start */
+.flex--align-content-start {
+  align-content: flex-start;
+}
+
+/* Pack lines to the cross-axis end */
+.flex--align-content-end {
+  align-content: flex-end;
+}
+
+/* Pack lines around the cross-axis center */
+.flex--align-content-center {
+  align-content: center;
+}
+
+/* Distribute lines along the cross-axis, start to end */
+.flex--align-content-between {
+  align-content: space-between;
+}
+
+/* Distribute lines along the cross-axis, equally spaced */
+.flex--align-content-around {
+  align-content: space-around;
+}
+
+/* Stretch lines to occupy the whole cross-axis */
+.flex--align-content-stretch {
+  align-content: stretch;
+}
+
+/*
+      ALIGN ITEMS ( Cross axis )  ------------------------------------------------
+      Summary:   aligns flex items of the current flex line the same way as
+                 justify-content but in the perpendicular direction.
+      Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/align-items
+      Default:   align-items: stretch;
+  */
+/* Center items in the cross-axis */
+.flex--align-items-center {
+  align-items: center;
+}
+
+/* Align to cross-start */
+.flex--align-items-start {
+  align-items: flex-start;
+}
+
+/* Align to cross-end */
+.flex--align-items-end {
+  align-items: flex-end;
+}
+
+/* Align the items' baselines */
+.flex--align-items-baseline {
+  align-items: baseline;
+}
+
+/* Stretch the items to fit
+      DEFAULT VALUE  */
+.flex--align-items-stretch {
+  align-items: stretch;
+}
+
+/*
+      ALIGN SELF ( Cross axis )  ------------------------------------------------
+      Summary:   aligns flex items of the current flex line overriding the align-items value.
+      Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/align-self
+      Default:   align-self: auto;
+  */
+/*  Computes to parent's align-items value or stretch if the element has no parent.  */
+.flex--align-self-auto {
+  align-self: auto;
+}
+
+/*  Cross-start margin edge of the flex item is flushed with the cross-start edge of the line.  */
+.flex--align-self-start {
+  align-self: flex-start;
+}
+
+/*  Cross-end margin edge of the flex item is flushed with the cross-end edge of the line.  */
+.flex--align-self-end {
+  align-self: flex-end;
+}
+
+/* Flex item's margin box is centered within the line on the cross-axis.
+      If the cross-size of the item is larger than the flex container, it will
+      overflow equally in both directions.  */
+.flex--align-self-center {
+  align-self: center;
+}
+
+/*  All flex items are aligned such that their baselines align. The item with
+      the largest distance between its cross-start margin edge and its baseline is
+      flushed with the cross-start edge of the line.  */
+.flex--align-self-baseline {
+  align-self: baseline;
+}
+
+/*  Flex items are stretched such as the cross-size of the item's margin box is
+      the same as the line while respecting width and height constraints.  */
+.flex--align-self-stretch {
+  align-self: stretch;
+}
+
+/*
+      WRAPPING -------------------------------------------------------------------
+      Summary:   specifies whether flex items are forced into a single line or can
+                 be wrapped onto multiple lines. If wrapping is allowed, this property
+                 also enables you to control the direction in which lines are stacked.
+      Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap
+      Default:   flex-wrap: nowrap;
+  */
+.flex--no-wrap {
+  flex-wrap: nowrap;
+}
+
+.flex--reverse-wrap {
+  flex-wrap: wrap-reverse;
+}
+
+.flex--wrap {
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+  .flex--wrap-small {
+    flex-wrap: wrap;
+  }
+}
+
+/*
+      VISUAL ORDER ---------------------------------------------------------------
+      Summary:   specifies the order used to lay out flex items in their flex container.
+                 Elements are laid out in the ascending order of the order value.
+                 Elements with the same order value are laid out in the order in
+                 which they appear in the source code.
+      Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/order
+      Default:   order: 0; { no order }
+  */
+.flex--order-one {
+  order: 1;
+}
+
+.flex--order-two {
+  order: 2;
+}
+
+.flex--order-three {
+  order: 3;
+}
+
+.main__header, .main__header-mobile, .main__header--top, .main__header--scrolling {
+  position: fixed;
+  width: calc(100vw - 40px);
+  height: 60px;
+  padding: 20px;
+  transition: all 500ms ease 0s;
+  z-index: 666;
+}
+
+.main__header-mobile {
+  padding: 10px;
+  width: calc(100vw - 20px);
+  background-color: white;
+  color: black;
+}
+
+.main__header--top {
+  color: white;
+}
+
+.main__header--scrolling {
+  background-color: white;
+  color: black;
+}
+
+.header__nav {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.logo__img {
+  width: 60px;
+  height: 60px;
+  padding-right: 20px;
+}
+
+.nav-mobile, .nav-mobile--hidden {
+  background-color: white;
+  width: 100vw;
+  padding: 7px 65px;
+  top: 0;
+  position: relative;
+  z-index: 667;
+  transition: all 500ms ease;
+}
+
+.nav-mobile--hidden {
+  top: -400px;
+}
+
+.nav__link, .nav__link--selected {
+  padding: 5px 10px;
+  font-weight: 300;
+  text-decoration-line: none;
+  color: inherit;
+}
+
+.nav__link:hover, .nav__link--selected:hover {
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+.nav__link--selected {
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: flex;
+}
+
+@media screen and (max-width: 750px) {
+  .mobile-only {
+    display: flex;
+  }
+  .desktop-only {
+    display: none;
+  }
+}
+
+.bio {
+  max-width: 1060px;
+  width: calc(100vw - 100px);
+  min-width: 750px;
+}
+
+.contact {
+  max-width: 1060px;
+  width: calc(100vw - 100px);
+  min-width: 750px;
+  height: calc(100vh - 60px);
+  padding-top: 40px;
+}
+
+.contact__info {
+  padding: 10px 0;
+}
+
+.contact__section {
+  padding: 40px;
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .contact__section {
+    width: 70%;
+    padding: 20px 40px;
+    align-items: center;
+  }
+}
+
+.contact__container-half {
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+@media (max-width: 750px) {
+  .contact__container-half {
+    width: 70%;
+  }
+}
+
+@media (max-width: 750px) {
+  .contact__container {
+    width: 70%;
+    padding-bottom: 20px;
+  }
+}
+
+.home {
+  max-width: 1060px;
+  width: calc(100vw - 100px);
+  min-width: 750px;
+}
+
+.home__container-half {
+  width: calc(50% - 40px);
+  padding: 20px;
+}
+
+@media (max-width: 750px) {
+  .home__container-half {
+    width: 70%;
+  }
+}
+
+.home__section {
+  padding: 40px;
+  text-align: center;
+}
+
+.photos {
+  max-width: 1060px;
+  width: calc(100vw - 100px);
+  min-width: 750px;
+}
+
+.photos__container-third {
+  width: calc(33% - 30px);
+  padding: 10px;
+}
+
+@media (max-width: 750px) {
+  .photos__container-third {
+    width: 70%;
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  transition: color 500ms ease;
+  transition: background-color 500ms ease;
+}
+
+html {
+  scroll-padding-top: 100px;
+  scroll-margin-top: 100px;
+}
+
+.theme--dark {
+  color: white;
+  background-color: black;
+}
+
+.theme--light {
+  color: black;
+}
+/*# sourceMappingURL=main.css.map */

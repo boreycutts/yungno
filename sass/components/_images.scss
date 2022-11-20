@@ -1,15 +1,47 @@
 .image {
     &--yungno {
         width: 100%;
+        transition: box-shadow 1s ease;
+        box-shadow: 0 0 0 #999;
+        &:hover {
+            box-shadow: 0 0 20px #999;
+        }
     }
 
     &--album {
-        width: 75%;
+        width: 400px;
+        height: 400px;
+        background: url("../images/letter_to_you_front.webp") no-repeat;
+        background-size: 400px 400px;
+        transition: all 500ms ease;
+
+        @media (max-width: $mobile-cutoff) {
+            width: 300px;
+            height: 300px;
+            background-size: 300px 300px;
+        }
+
+        &:hover {
+            width: 450px;
+            height: 450px;
+            background: url("../images/letter_to_you_back.webp") no-repeat;
+            background-size: 450px 450px;
+            @media (max-width: $mobile-cutoff) {
+                width: 350px;
+                height: 350px;
+                background-size: 350px 350px;
+            }
+        }
     }
 
     &--icon {
         width: 25px;
         text-align: center;
         padding-right: 5px;
+    }
+
+    &--music {
+        height:50px;
+        padding: 10px 10px 10px 0;
     }
 }

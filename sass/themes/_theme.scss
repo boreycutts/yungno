@@ -1,7 +1,14 @@
 body {
     font-family: 'Roboto', sans-serif;
-    transition: color 1s ease;
-    transition: background-color 1s ease;
+    transition: color 500ms ease;
+    transition: background-color 500ms ease;
+}
+
+html {
+    scroll-padding-top: 100px;
+    scroll-margin-top: 100px;
+    overflow-x: hidden;
+
 }
 
 .theme {
@@ -12,6 +19,6 @@ body {
 
     &--light {
         color: $color-primary-dark;
-        background-color: $color-secondary-dark;
+        // background-color: $color-secondary-dark;
     }
 }
