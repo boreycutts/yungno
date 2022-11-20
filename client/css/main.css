@@ -337,6 +337,14 @@ html, body {
   top: -10px;
   position: absolute;
   overflow: hidden;
+  width: 100vw;
+  height: 120vh;
+}
+
+.container {
+  height: 120vh;
+  scroll-padding-top: 0;
+  scroll-margin-top: 0;
 }
 
 .main__content, .main__content--hidden {

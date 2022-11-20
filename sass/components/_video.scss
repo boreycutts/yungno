@@ -1,13 +1,12 @@
 .back-video {
-    // position: absolute;
-    // top: -2px;
-    // left: -5vw;
-    // width: 110vw;
-    // z-index: 0;
-
     height: 120vh;
     z-index: 0;
     overflow:hidden;
+    // @media (max-width: $mobile-cutoff) {
+    //     // width: 100vw;
+    //     // height: auto;
+
+    // }
 }
 
 .video-container {
@@ -15,4 +14,24 @@
     // left: 0;
     position: absolute;
     overflow:hidden;
+    width: 100vw;
+    height: 120vh;
+
+    // @media (max-width: $mobile-cutoff) {
+    //     width: 100vw;
+    //     height: auto;
+
+    // }
+
+}
+
+.container {
+    height: 120vh; 
+    scroll-padding-top: 0; 
+    scroll-margin-top: 0;
+
+    // @media (max-width: $mobile-cutoff) {
+    //     // width: 100vw;
+    //     height: auto;
+    // }
 }
