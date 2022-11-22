@@ -818,8 +818,14 @@ html, body {
 }
 
 .home__container-half {
-  width: calc(50% - 40px);
+  width: calc(40% - 40px);
   padding: 20px;
+}
+
+@media (max-width: 800px) {
+  .home__container-half {
+    width: calc(50% - 40px);
+  }
 }
 
 @media (max-width: 750px) {
