@@ -397,7 +397,7 @@ html, body {
 
 @media (max-width: 750px) {
   .main__content, .main__content--hidden {
-    padding-top: 100px;
+    padding-top: 20px;
   }
 }
 
