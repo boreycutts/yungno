@@ -247,30 +247,43 @@ html, body {
   background: #333;
 }
 
-.input, .input--message {
-  background: #fff;
-  color: #444 !important;
+.input, .input--dark, .input--message, .input--message--dark {
+  background: white;
+  color: black !important;
   font-size: 18px;
   font-weight: 100 !important;
   font-family: "Roboto";
   width: 360px;
   padding: 11px 10px;
   margin-bottom: 10px;
-  border: 1px solid #bbb;
+  border: 1px solid black;
+  transition: all 500ms ease;
+}
+
+.input--dark {
+  background: black;
+  color: white !important;
+  border: 1px solid white;
 }
 
 @media (max-width: 750px) {
-  .input, .input--message {
+  .input, .input--dark, .input--message, .input--message--dark {
     width: 80vw;
   }
 }
 
-.input--message {
+.input--message, .input--message--dark {
   height: 135px;
 }
 
+.input--message--dark {
+  background: black;
+  color: white !important;
+  border: 1px solid white;
+}
+
 @media (max-width: 750px) {
-  .input--message {
+  .input--message, .input--message--dark {
     width: 80vw;
   }
 }

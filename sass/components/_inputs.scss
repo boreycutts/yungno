@@ -1,13 +1,21 @@
 .input {
-    background: #fff;
-    color: #444 !important;
+    background: $color-secondary-dark;
+    color: $color-primary-dark !important;
     font-size: 18px;
     font-weight: 100 !important;
     font-family: "Roboto";
     width: 360px;
     padding: 11px 10px;
     margin-bottom: 10px;
-    border: 1px solid #bbb;
+    border: 1px solid $color-primary-dark;
+    transition: all 500ms ease;
+
+    &--dark {
+        @extend .input;
+        background: $color-primary-dark;
+        color: $color-secondary-dark !important;
+        border: 1px solid $color-secondary-dark;
+    }
 
     @media (max-width: $mobile-cutoff) {
         width: 80vw;
@@ -16,6 +24,13 @@
     &--message {
         @extend .input;
         height: 135px;
+
+        &--dark {
+            @extend .input--message;
+            background: $color-primary-dark;
+            color: $color-secondary-dark !important;
+            border: 1px solid $color-secondary-dark;
+        }
 
         @media (max-width: $mobile-cutoff) {
             width: 80vw;

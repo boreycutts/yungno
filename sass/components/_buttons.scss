@@ -19,7 +19,6 @@
     &--light {
         @extend .button;
         border: 1px solid $color-primary-dark;
-
         &:hover {
             cursor: pointer;
             background-color: $color-primary-dark;

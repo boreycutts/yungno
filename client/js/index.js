@@ -57,7 +57,11 @@ document.addEventListener("loaded", () => {
         let links = document.getElementsByClassName("nav__link");
         let header = document.getElementById("header");
         let headerMobile = document.getElementById("header-mobile");
-        
+        let inputs = document.getElementsByClassName("i");
+        let message = document.getElementsByClassName("im")[0];
+        console.log(inputs)
+
+
         if(bioRect.top < 100 && workRect.top > 100) {
             for(let i = 0; i < links.length; i++) {
                 links[i].classList.remove("nav__link--selected");
@@ -73,6 +77,14 @@ document.addEventListener("loaded", () => {
 
             headerMobile.classList.add("main__header-mobile--scrolling");
             headerMobile.classList.remove("main__header-mobile--top");
+
+            for(let i = 0; i < inputs.length; i++) {
+                inputs[i].classList.add("input--dark");
+                inputs[i].classList.remove("input");
+            }
+
+            message.classList.add("input--message--dark");
+            message.classList.remove("input--message");
         } else if(workRect.top < 100 && contactRect.top > 100) {
             for(let i = 0; i < links.length; i++) {
                 links[i].classList.remove("nav__link--selected");
@@ -88,6 +100,14 @@ document.addEventListener("loaded", () => {
 
             headerMobile.classList.add("main__header-mobile--scrolling");
             headerMobile.classList.remove("main__header-mobile--top");
+
+            for(let i = 0; i < inputs.length; i++) {
+                inputs[i].classList.add("input--dark");
+                inputs[i].classList.remove("input");
+            }
+
+            message.classList.add("input--message--dark");
+            message.classList.remove("input--message");
         } else if(contactRect.top < 100) {
             for(let i = 0; i < links.length; i++) {
                 links[i].classList.remove("nav__link--selected");
@@ -103,6 +123,14 @@ document.addEventListener("loaded", () => {
 
             headerMobile.classList.add("main__header-mobile--scrolling");
             headerMobile.classList.remove("main__header-mobile--top");
+
+            for(let i = 0; i < inputs.length; i++) {
+                inputs[i].classList.add("input");
+                inputs[i].classList.remove("input--dark");
+            }
+
+            message.classList.add("input--message");
+            message.classList.remove("input--message--dark");
         } else {
             for(let i = 0; i < links.length; i++) {
                 links[i].classList.remove("nav__link--selected");
@@ -118,6 +146,14 @@ document.addEventListener("loaded", () => {
 
             headerMobile.classList.remove("main__header-mobile--scrolling");
             headerMobile.classList.add("main__header-mobile--top");
+
+            for(let i = 0; i < inputs.length; i++) {
+                inputs[i].classList.add("input--dark");
+                inputs[i].classList.remove("input");
+            }
+
+            message.classList.add("input--message--dark");
+            message.classList.remove("input--message");
         }
     });
 
