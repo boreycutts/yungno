@@ -59,8 +59,6 @@ document.addEventListener("loaded", () => {
         let headerMobile = document.getElementById("header-mobile");
         let inputs = document.getElementsByClassName("i");
         let message = document.getElementsByClassName("im")[0];
-        console.log(inputs)
-
 
         if(bioRect.top < 100 && workRect.top > 100) {
             for(let i = 0; i < links.length; i++) {
