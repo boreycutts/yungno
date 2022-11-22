@@ -129,6 +129,14 @@ html, body {
   overflow-wrap: break-word;
 }
 
+.text--justify {
+  text-align: justify;
+}
+
+.text--center {
+  text-align: left;
+}
+
 .text--center {
   text-align: center;
 }
@@ -829,6 +837,7 @@ html, body {
   max-width: 1060px;
   width: calc(100vw - 100px);
   min-width: 200px;
+  padding-top: 50px;
 }
 
 .photos__container-third {
@@ -838,8 +847,13 @@ html, body {
 
 @media (max-width: 750px) {
   .photos__container-third {
-    width: 80%;
+    width: 90%;
+    padding-top: 0;
   }
+}
+
+.work {
+  padding-top: 50px;
 }
 
 body {

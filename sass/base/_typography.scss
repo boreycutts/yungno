@@ -6,6 +6,14 @@
         overflow-wrap: break-word;
     }
 
+    &--justify {
+        text-align: justify;
+    }
+
+    &--center {
+        text-align: left;
+    }
+
     &--center {
         text-align: center;
     }

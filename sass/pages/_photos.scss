@@ -2,13 +2,15 @@
     max-width: 1060px;
     width: calc(100vw - 100px);
     min-width: 200px;
+    padding-top: 50px;
 
     &__container-third {
         width: calc(33% - 30px);
         padding: 10px;
 
         @media (max-width: $mobile-cutoff) {
-            width: 80%;
+            width: 90%;
+            padding-top: 0;
         }
     }
 }
