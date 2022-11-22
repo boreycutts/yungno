@@ -822,7 +822,7 @@ html, body {
   padding: 20px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .home__container-half {
     width: calc(50% - 40px);
   }
