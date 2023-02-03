@@ -1,4 +1,4 @@
-const DEFAULT_PORT = 80;
+const DEFAULT_PORT = 8000;
 
 let express = require('express'),
     app = express();
